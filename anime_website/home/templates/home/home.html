@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Liberation</title>
+    <link rel="icon" type="image/png" href="{% static 'home/images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+</head>
+<body>
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="{% static 'home/images/logo.png' %}" alt="Logo">
+            <span>The Liberation</span>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <!-- Navigation and Icons -->
+        <div class="icons">
+            <a href="{% url 'signup' %}" class="signup">Sign Up</a>
+            <img src="{% static 'home/images/home-icon.png' %}" alt="Home Icon" title="Home">
+            <img src="{% static 'home/images/profile-icon.png' %}" alt="Profile Icon" title="Profile">
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main>
+        <section class="content">
+            <h1>Welcome To Onepiece World</h1>
+            <p>Void Century Started Here.</p>
+
+            <!-- Video Section -->
+            <div class="video-container">
+                <h2>The Drums Of Liberation</h2>
+                <video controls>
+                    <source src="{% static 'home/images/Drums Of Liberation.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- Movies Section -->
+<!-- Movies Section -->
+<div class="movies-section">
+    <h2>Popular Gihbli Movies</h2>
+    <p>Explore some of the most loved movies of all time!</p>
+    <div class="movies-grid">
+        <div class="movie-card">
+            <!-- Link around the image to redirect to the movie page -->
+            <a href="https://hianime.to/watch/the-wind-rises-369?ep=57987">
+                <img src="{% static 'home/images/The Wind Rises.png' %}" alt="The Wind Rises">
+            </a>
+            <h3>The Wind Rises</h3>
+        </div>
+        <div class="movie-card">
+            <a href="https://hianime.to/watch/spirited-away-20?ep=58021">
+                <img src="{% static 'home/images/spirited away.png' %}" alt="spirited away">
+            </a>
+            <h3>Spirited Away</h3>
+        </div>
+        <div class="movie-card">
+            <a href="https://hianime.to/watch/my-neighbor-totoro-188?ep=58274">
+            <img src="{% static 'home/images/My Neighbor Totoro.png' %}" alt="My Neighbor Totoro">
+            </a>
+            <h3>My Neighbor Totoro</h3>
+        </div>
+        <div class="movie-card">
+            <a href="https://hianime.to/watch/the-garden-of-words-414?ep=57988">
+            <img src="{% static 'home/images/Garden Of Words.png' %}" alt="Garden Of Words">
+            </a>
+            <h3>Garden Of Words</h3>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

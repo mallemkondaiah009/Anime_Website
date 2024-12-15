@@ -1,0 +1,127 @@
+/* General Reset */
+body, html, h1, p, label, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Container Styling */
+.signup-container {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    padding: 30px 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header Styling */
+.form-header h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-header p {
+    font-size: 0.9em;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6a11cb;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+}
+
+.signup-btn {
+    background: #6a11cb;
+    color: #fff;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+    background: #2575fc;
+    box-shadow: 0 4px 10px rgba(37, 117, 252, 0.5);
+}
+
+/* Error Messages */
+.form-group .errorlist {
+    color: #d9534f;
+    font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 20px 15px;
+    }
+
+    .form-header h1 {
+        font-size: 1.5em;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
